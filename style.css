@@ -1,89 +1,115 @@
-/* Reset some basic styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* Body Styles */
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
-/* Header styling */
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
+header .logo {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
     color: #fff;
-}
-
-header h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-header a {
-    color: #00aced;
     text-decoration: none;
-    margin: 10px;
-    padding: 8px 16px;
-    background-color: #fff;
-    color: #333;
-    border-radius: 5px;
     font-weight: bold;
 }
 
-header a:hover {
-    background-color: #00aced;
-    color: #fff;
+/* Section Styles */
+.section {
+    padding: 60px 0;
 }
 
-/* Section styling */
-section {
+.container {
     width: 80%;
-    max-width: 800px;
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
-section h2 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #00aced;
-    padding-bottom: 5px;
-}
-
-/* List styling */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-/* Footer styling */
-footer {
-    margin-top: 20px;
-    padding: 10px;
+h2 {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Portfolio Styles */
+.portfolio-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-items .item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.portfolio-items .item img {
     width: 100%;
+    height: auto;
+}
+
+/* Contact Form Styles */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+form button {
     background-color: #333;
     color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
+
+form button:hover {
+    background-color: #444;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
