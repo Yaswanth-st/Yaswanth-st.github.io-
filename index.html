@@ -3,53 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yaswanth Senthil Kumar Thilagavathi</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Yaswanth's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <h1>Yaswanth Senthil Kumar Thilagavathi</h1>
-        <p>Computer Science and Engineering Student | Problem Solver | Aspiring Drone and UAV Developer</p>
-        <a href="https://www.linkedin.com/in/yaswanth-st" target="_blank">LinkedIn Profile</a>
-        <a href="resume.pdf" target="_blank">Download My Resume</a>
+        <div class="container">
+            <h1 class="logo">Yaswanth Senthil Kumar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Yaswanth, a Computer Science and Engineering student with interests in drones, UAVs, AI, and embedded systems. I'm passionate about leveraging technology to innovate in areas like disaster management and autonomous systems.</p>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi! I am Yaswanth Senthil Kumar, a passionate Computer Science student at Kumaraguru College of Technology. I specialize in software development, AI, and web technologies. I aim to contribute to innovative projects that solve real-world problems.</p>
+        </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Secretary</strong> - IEEE KCT SB</li>
-            <li><strong>Embedded Engineer</strong> - Aeromodeling Club KCT</li>
-            <li>Participated in various projects and competitions, including ADDC 2023 and SAE Aerothon 2024</li>
-        </ul>
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-items">
+                <div class="item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>A brief description of this project.</p>
+                </div>
+                <div class="item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>A brief description of this project.</p>
+                </div>
+                <div class="item">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>A brief description of this project.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Disaster Management Drone</strong> - A UAV system for identifying people in disaster zones using image processing.</li>
-            <li><strong>Milk Expiration Detection</strong> - Machine learning project to predict milk shelf life.</li>
-            <li><strong>Foreign Visitor Guide App</strong> - Provides tourists with local information and emergency contacts.</li>
-        </ul>
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>You can view my full resume here:</p>
+            <a href="resume.pdf" target="_blank">Download Resume</a>
+        </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/yaswanth-st" target="_blank">LinkedIn</a> or send me an email at <a href="mailto:yaswanthst9734@gmail.com">yaswanthst9734@gmail.com</a>.</p>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form" action="send_message.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Yaswanth Senthil Kumar Thilagavathi</p>
+        <div class="container">
+            <p>&copy; 2024 Yaswanth Senthil Kumar | All Rights Reserved</p>
+        </div>
     </footer>
 </body>
 </html>
+
