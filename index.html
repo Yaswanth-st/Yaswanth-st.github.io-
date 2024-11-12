@@ -1,82 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yaswanth's Portfolio</title>
+    <title>Yaswanth Senthil Kumar - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
+
 <body>
+    <!-- Navigation -->
     <header>
-        <div class="container">
-            <h1 class="logo">Yaswanth Senthil Kumar Thilagavathi</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">
+                <h1>Yaswanth</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about" class="section">
+    <!-- About Me Section -->
+    <section id="about" class="section-padding">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hi! I am Yaswanth Senthil Kumar, a passionate Computer Science student at Kumaraguru College of Technology. I specialize in software development, AI, and web technologies. I aim to contribute to innovative projects that solve real-world problems.</p>
+            <p>Hi, I’m Yaswanth Senthil Kumar, a passionate Computer Science student at Kumaraguru College of Technology. 
+                I specialize in software development, AI, and web technologies. I aim to contribute to innovative projects 
+                that solve real-world problems.</p>
         </div>
     </section>
 
-    <section id="portfolio" class="section">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-padding bg-light">
         <div class="container">
             <h2>Portfolio</h2>
-            <div class="portfolio-items">
-                <div class="item">
-                    <img src="project1.jpg" alt="Project 1">
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="images/project1.jpg" alt="Project 1">
                     <h3>Project 1</h3>
-                    <p>A brief description of this project.</p>
+                    <p>Project description goes here.</p>
                 </div>
-                <div class="item">
-                    <img src="project2.jpg" alt="Project 2">
+                <div class="project-item">
+                    <img src="images/project2.jpg" alt="Project 2">
                     <h3>Project 2</h3>
-                    <p>A brief description of this project.</p>
+                    <p>Project description goes here.</p>
                 </div>
-                <div class="item">
-                    <img src="project3.jpg" alt="Project 3">
+                <div class="project-item">
+                    <img src="images/project3.jpg" alt="Project 3">
                     <h3>Project 3</h3>
-                    <p>A brief description of this project.</p>
+                    <p>Project description goes here.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="resume" class="section">
+    <!-- Resume Section -->
+    <section id="resume" class="section-padding">
         <div class="container">
             <h2>Resume</h2>
-            <p>You can view my full resume here:</p>
-            <a href="resume.pdf" target="_blank">Download Resume</a>
+            <a href="resume.pdf" class="btn">Download My Resume</a>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
         <div class="container">
             <h2>Contact</h2>
-            <form id="contact-form" action="send_message.php" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Yaswanth Senthil Kumar | All Rights Reserved</p>
         </div>
     </footer>
 </body>
-</html>
 
+</html>
